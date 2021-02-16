@@ -42,7 +42,10 @@ class QuestionsWidget extends StatelessWidget {
             const SizedBox(height: 32),
             Text(
               question.text,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+              ),
             ),
             const SizedBox(height: 8),
             Text(
