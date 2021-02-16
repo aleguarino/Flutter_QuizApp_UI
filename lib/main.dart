@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_ui/data/categories.dart';
 import 'package:quiz_ui/screens/category_screen.dart';
+import 'package:quiz_ui/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,12 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Quiz App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CategoryScreen(
-        category: categories.first,
-      ),
+      home: HomeScreen(),
     );
   }
 }
